@@ -1,15 +1,22 @@
 // Require needed libraries
 global.Backbone = require("backbone");
 global._        = require("underscore");
+sinon           = require("sinon");
 
 // Stub history (and globals)
 require("../src/backbone.history_stub.js").stub();
+
+// Create spy
+var spy = sinon.spy()
 
 // Create a router
 var SpecRouter = Backbone.Router.extend({
   routes: {
     ""      : "root",
     "a/b/c" : "abc"
+  },
+  abc: function(){
+    spy()
   }
 });
 var router = new SpecRouter();
@@ -32,6 +39,11 @@ describe("Backbone.HistoryStub",function(){
     handler_count = Backbone.history.handlers.length;
     routes_count  = _.values(router.routes).length;
     expect(handler_count).toBe(routes_count);
+  });
+
+  it("calls handlers",function(){
+    router.navigate("a/b/c",{trigger:true});
+    expect(spy.called).toBe(true);
   });
 });
 
