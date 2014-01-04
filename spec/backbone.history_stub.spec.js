@@ -7,7 +7,7 @@ sinon           = require("sinon");
 require("../backbone.history_stub.js").stub();
 
 // Create spy
-var spy = sinon.spy()
+var spy = sinon.spy();
 
 // Create a router
 var SpecRouter = Backbone.Router.extend({
@@ -16,7 +16,7 @@ var SpecRouter = Backbone.Router.extend({
     "a/b/c" : "abc"
   },
   abc: function(){
-    spy()
+    spy();
   }
 });
 var router = new SpecRouter();

@@ -21,8 +21,8 @@ module.exports = (function() {
   function HistoryStub() {}
 
   HistoryStub.stub = function() {
-    _.extend( global,           stubs._global  )
-    _.extend( Backbone.history, stubs._history )
+    _.extend( global,           stubs._global  );
+    _.extend( Backbone.history, stubs._history );
   };
 
   return HistoryStub;
