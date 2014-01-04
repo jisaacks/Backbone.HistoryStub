@@ -4,7 +4,7 @@ global._        = require("underscore");
 sinon           = require("sinon");
 
 // Stub history (and globals)
-require("../src/backbone.history_stub.js").stub();
+require("../backbone.history_stub.js").stub();
 
 // Create spy
 var spy = sinon.spy()

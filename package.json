@@ -1,16 +1,16 @@
 {
   "name" : "backbone.history_stub",
-  "version" : "0.0.0",
-  "description" : "Backbone.history stub",
+  "version" : "0.0.1",
+  "description" : "Stubs out necessary properties in Backbone.history and the global namespace (i.e. window, document) to allow Backbone.history to run outside of browser.",
   "author" : {
     "name" : "JD Isaacks",
     "email" : "jd@jisaacks.com",
     "url" : "http://github.com/jisaacks"
   },
-  "main": "./lib/backbone.detour",
+  "main": "./backbone.history_stub",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jisaacks/Backbone.HiatoryStub.git"
+    "url": "https://github.com/jisaacks/Backbone.HistoryStub.git"
   },
   "dependencies" : {
     "underscore" : ">=1.4",
