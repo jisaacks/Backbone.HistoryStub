@@ -1,0 +1,22 @@
+{
+  "name" : "backbone.history_stub",
+  "version" : "0.0.0",
+  "description" : "Backbone.history stub",
+  "author" : {
+    "name" : "JD Isaacks",
+    "email" : "jd@jisaacks.com",
+    "url" : "http://github.com/jisaacks"
+  },
+  "main": "./lib/backbone.detour",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jisaacks/Backbone.HiatoryStub.git"
+  },
+  "dependencies" : {
+    "underscore" : ">=1.4",
+    "backbone"   : ">=0.9"
+  },
+  "devDependencies": {
+    "sinon" : ">=1.6"
+  }
+}
