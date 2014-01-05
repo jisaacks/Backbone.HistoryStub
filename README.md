@@ -4,7 +4,7 @@ Stubs out necessary properties in Backbone.history and the global namespace (i.e
 
 ### Usage
 
-install the node package: `npm install backbone.history_stub
+Install the node package: `npm install backbone.history_stub`
 
 Then stub before calling `Backbone.history.start()`:
 
