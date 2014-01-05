@@ -9,7 +9,7 @@ install the node package: `npm install backbone.history_stub
 Then stub before calling `Backbone.history.start()`:
 
 ```javascript
-require("../src/backbone.history_stub.js").stub();
+require("backbone.history_stub").stub();
 Backbone.history.start();
 ```
 
