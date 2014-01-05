@@ -1,6 +1,6 @@
 ## Backbone.HistoryStub
 
-Stubs out necessary properties in Backbone.history and the global namespace (i.e. window, document) to allow Backbone.history to run outside of browser.
+Stubs out necessary properties in Backbone.history and the global namespace (i.e. window, document) to allow Backbone.history to run outside of browser. ( *Mainly for testing purposes* )
 
 ### Usage
 
